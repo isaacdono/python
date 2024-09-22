@@ -1,2 +1,3 @@
 *.pyc
-/system_monitor/__pycache__
+/app/__pycache__
+/app/tests/__pycache__

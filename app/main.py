@@ -1,6 +1,6 @@
-import cpu_details
-import disk_details
-import memory_details
+import modules.cpu_details as cpu_details
+import modules.disk_details as disk_details
+import modules.memory_details as memory_details
 
 
 def main():
