@@ -1,3 +1,6 @@
+# SCRIPT MADE WITH CHAT GPT
+# MINOR ADJUSTMENTS BY ME
+
 import unittest
 from unittest.mock import patch
 from ..main import main  # Import the main function from the app
