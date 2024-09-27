@@ -4,8 +4,18 @@ import time
 import psutil
 
 def run():
+
+    # Define the path to the 'logs' directory inside the 'app' directory
+    log_directory = os.path.join(os.path.dirname(__file__), 'logs')
+
+    # Ensure the 'logs' directory exists
+    os.makedirs(log_directory, exist_ok=True)
+
+    # Path to the log file inside 'app/logs/'
+    log_file_path = os.path.join(log_directory, 'system_metrics.csv')
+
     # Open the CSV file in append mode
-    with open('./logs/system_metrics.csv', mode='a', newline='') as file:
+    with open(log_file_path, mode='a', newline='') as file:
         writer = csv.writer(file)
 
         # Write the header row if the file is empty
